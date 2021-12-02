@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button-container{
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn-start{
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.container{
+    height: 900px;
+    width: 800px;
+    border: 1px solid gray;
+    margin: 1rem auto;
+    background-image: url('../img/pic1.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "month1 month2 month3"
+        "month4 month5 month6"
+        "month7 month8 month9"
+        "month10 month11 month12"
+    ;
+}
+
+.image{
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    transition: opacity 3s;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+}
